@@ -1,7 +1,0 @@
-@CHARSET "UTF-8";
-
-.tabWidget{margin:2px}
-.tabWidget ul{padding:0px;margin:0px;list-style: none;}
-.tabWidget li{float:left;padding:5px 15px;margin-right:2px;background-color:#4169E1;border-top-left-radius:5px;border-top-right-radius:5px;cursor:pointer;color:linen}
-.tabWidget .active{background-color:skyblue;font-weight: bold;cursor:default; color:black}
-.tabWidget .tabContent{background-color:skyblue;padding:5px;clear:both;height:127px}
