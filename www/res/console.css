@@ -1,0 +1,18 @@
+#consoleTxb
+{
+	position:absolute;
+   background-color: black;
+   color:white;
+   padding:10px;
+   /*eight: 100%;
+   width: 100%;*/
+   top:0px; left:0px; right:0px; bottom:0px;
+   overflow-y: scroll;
+   direction:ltr;
+   text-align:left;
+   font-size:12px;
+   font-family:"Courier New", Courier, monospace;
+}
+#consoleTxb input{background-color: transparent;color:white;border: 0px solid black;outline:none}
+.error{color:red;font-weight: bold}
+.consoleInfo{color:lime;}

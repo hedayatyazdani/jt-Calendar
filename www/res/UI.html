@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+	<!-- Calendar -->
+	<div id="calendarArea" class="calendar">
+		<ul id="calDay1"></ul>
+		<ul id="calDay2"></ul>
+		<ul id="calDay3"></ul>
+		<ul id="calDay4"></ul>
+		<ul id="calDay5"></ul>
+		<ul id="calDay6"></ul>
+		<ul id="calDay7"></ul>
+	</div>
+	<!-- Day -->
+	View 1:
+	<div class="day day%number%" onclick="Calendar.activate(%stamp%)">
+		<div><b>%day%</b>/</div><div id="slaves%stamp%" class="slaveDate"></div>
+		<ul id="dayBox%stamp%">
+			<!-- task summeries goes here -->
+		</ul>
+		<div id="anivBox%stamp%"></div>
+	</div>
+	View 3:
+		<table style="width:100%">
+			<tr>
+				<td>
+					<div><b>%day%/%month%/%year%</b>&nbsp;</div><div id="infoSlaves%stamp%" class="slaveDate"></div>
+					<ul id="dayBox%stamp%">
+						<!-- task summeries goes here -->
+					</ul>
+					<div id="infoAnivBox%stamp%" class="infoAnniversary"></div>
+				</td>
+				<td id="taskPan">
+					
+				</td>
+			</tr>
+		</table>
+	
+	View 2:
+	<tr><td><b>%day%</b>/%month%/%year% </td> <td>%operation%</td></td>
+	</body>
+	
+	<!-- Calendar setting -->
+	<div>
+		<table>
+			<tr>
+				<td>%calendarType-lbl%</td> <td>
+					<select id="calTypeCmb" onchange="CalSetting.save()">
+						<option value="1">%gregorian-lbl%</option>
+						<option value="2">%solar-lbl%</option>
+						<option value="3">%other-lbl%</option>
+					</select>
+				</td>
+			</tr><tr>
+				<td>%slaveCalendar-lbl%</td> <td>
+					<ul id="slaveCalendarList">
+						
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!-- Aniversary -->
+	<div>
+		<table class="aniversary_1">
+				<tr><td>%title-lbl%</td> <td><input class="textbox" type="text" id="atitleTxb" value="%title%"/></tr>
+				<tr><td>%date-lbl%</td> <td id="adatePan"></td></tr>
+		</table>
+		<table class="aniversary_1 infobox">
+			<tr><td></td> <td><input type="checkbox" id="aglobalChb"/> %global-lbl% &nbsp;
+				<input type="checkbox" id="holidayChb" /> %holiday-lbl%
+			</td></tr>
+			<tr>
+				<td>%kind-lbl%</td><td id="kindPan"></td>
+			</tr>
+			<!--<tr><td>%location-lbl%</td> <td><input type="hidden" id="alocationTxb" value="%location%"/></td></tr>-->
+			<tr><td>%explain-lbl%</td> <td><textarea id="aexplainTxb">%explain%</textarea></td></tr>
+			<tr><td></td> <td><button class="green btn" onclick="Aniversary.onSave()">%save-lbl%</button></td></tr>
+		</table>
+	</div>
+	<!-- Task -->
+	<div class="taskEdit">
+		<table class="infobox">
+			<tr><td>%title-lbl%</td><td><input type="text" id="titleTxb" value="%title%"/></td></tr>
+			<tr><td>%index-lbl%</td><td><input type="number" id="indexTxb" value="%index%"/></td></tr>
+			<tr><td>%color-lbl%</td><td><input type="color" id="colorTxb" value="%color%"/></td></tr>
+			<tr><td>%explain-lbl%</td><td><textarea id="explainTxb">%explain%</textarea></td></tr>
+			<tr><td>%repeat-lbl%</td><td id="repeatPan"></td></tr>
+			<tr><td>%failurePercent-lbl%</td><td><input type="number" id="ftTxb" value="%failurTimePercent%"/></td></tr>
+		</table>
+		<table>
+			<tr>
+				<td id="startLbl">%start-lbl%</td> <td id="endLbl">%end-lbl%</td>
+			</tr>
+			<tr>
+				<td id="startPan"></td> <td id="endPan"></td>
+			</tr>
+			<tr><td>&nbsp;</td> <td></td></tr>
+			<tr>
+				<td id="fstartLbl">%failureStart-lbl%</td> <td id="fendLbl">%failureEnd-lbl%</td>
+			</tr>
+			<tr>
+				<td id="fstartPan"></td> <td id="fendPan"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<hr style="clear:both"/>
+		<center><button onclick="Task.onSave()" class="green btn">%save-lbl%</button></center>
+	</div>
+	View 2:
+	<span style="background-color:%color%" class="taskView2" title="%explain%">
+		%title% <span><button onclick="LU.clear();Task.buildForm(Task.loadList[%id%],1,LU.painterArea);" class="green btn">%edit-lbl%</button> <button onclick="Task.remove(Task.loadList[%id%]);" class="red btn">%remove-lbl%</button></span>
+	</span>
+</html>
