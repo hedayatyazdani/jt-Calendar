@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "org.jointab.calendar"
+        }
+    }
+}
